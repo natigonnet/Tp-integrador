@@ -1,4 +1,4 @@
-# 📘 Trabajo Integrador – [Nombre de la materia]
+# 📘 Trabajo Grupal Integrador 
 
 ## 👩‍💻 Integrantes
 - Natalia Gonnet (@natigonnet)
