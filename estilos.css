@@ -1,0 +1,107 @@
+/* Estilos Globales */
+body {
+    background-color: #cad2c5;
+    color: #2f3e46;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #2f3e46;
+}
+
+h2, h3 {
+    color: #2f3e46;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2f3e46;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #52796f;
+}
+
+/* Estilos del Formulario */
+/* Contenedor del Formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+    margin: 20px auto;
+    max-width: 600px; /* Aumentar el ancho máximo */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+}
+
+/* Estilos del Formulario */
+form {
+    background-color: #e0e0e0; /* Fondo gris suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegurar que el formulario ocupe todo el ancho del contenedor */
+}
+
+form h3 {
+    font-family: 'Caveat', cursive;
+    color: #2f3e46;
+    margin-bottom: 15px;
+    background-color: #d3d3d3; /* Fondo gris para el título */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Centrar el texto del título */
+    width: 100%; /* Asegurar que el título no exceda el formulario */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2f3e46;
+    font-family: 'Roboto', sans-serif;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button {
+    background-color: #84a98c;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #52796f;
+    transform: translateY(-2px);
+}
