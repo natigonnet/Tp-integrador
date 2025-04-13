@@ -26,7 +26,7 @@ h1 {
 }
 
 h2, h3 {
-    color: #2f3e46;
+    color: #3b505c;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,6 +51,7 @@ nav ul li a {
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li a:hover {
@@ -128,7 +129,7 @@ form button:hover {
 
 /* Estilos del Footer */
 footer {
-    background-color: #000000;
+    background-color: #666666; /* Un gris más oscuro */
     color: #ffffff;
     padding: 60px 0 20px;
     margin-top: 4rem;
@@ -201,14 +202,15 @@ footer {
     max-width: 1200px;
     margin: 40px auto 0;
     padding: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid #ffffff;
     text-align: left;
 }
 
 .footer-bottom p {
-    color: #999;
+    color: #ffffff;
     font-size: 11px;
     margin: 0;
+    letter-spacing: 1px;
 }
 
 /* WhatsApp flotante */
@@ -249,4 +251,37 @@ footer {
     .footer-container {
         grid-template-columns: 1fr;
     }
+}
+
+/* Estilos para los títulos principales */
+h2.contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+h3.contact-info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para los títulos del footer */
+.footer-column h4 {
+    font-family: 'Montserrat', sans-serif; /* Misma fuente que el menú */
+    font-size: 0.9rem; /* Mismo tamaño que el menú */
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
