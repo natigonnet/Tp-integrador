@@ -1,13 +1,28 @@
 /* Estilos Globales */
 body {
-    background-color: #cad2c5;
-    color: #2f3e46;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del Header */
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
-    color: #2f3e46;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 1.5rem;
 }
 
 h2, h3 {
@@ -19,17 +34,22 @@ h2, h3 {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #2f3e46;
-    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     transition: color 0.3s ease;
 }
 
@@ -64,8 +84,8 @@ form h3 {
     background-color: #d3d3d3; /* Fondo gris para el título */
     padding: 10px;
     border-radius: 5px;
-    text-align: center; /* Centrar el texto del título */
-    width: 100%; /* Asegurar que el título no exceda el formulario */
+    text-align: center; 
+    width: 100%; 
 }
 
 form label {
@@ -104,4 +124,129 @@ form button {
 form button:hover {
     background-color: #52796f;
     transform: translateY(-2px);
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 0 20px;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-section h4 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li,
+.footer-section ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+/* Sección de redes sociales */
+.footer-section.social {
+    justify-self: end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #999;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: left;
+}
+
+.footer-bottom p {
+    color: #999;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-section.social {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
 }
