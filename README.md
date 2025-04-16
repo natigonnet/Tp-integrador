@@ -3,7 +3,7 @@
 ## 👩‍💻 Integrantes
 - Natalia Gonnet (@natigonnet)
 - Joaquin Ignacio Gonzalez (@jigcau89)
-- Tomas Juarez 
+- Tomas Juarez (@tomi410)
 - Emilio Pino (@pinoen)
 
 ## 📌 Descripción
