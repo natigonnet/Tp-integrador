@@ -126,6 +126,38 @@ form button:hover {
     background-color: #52796f;
     transform: translateY(-2px);
 }
+/* Sección bienvenida */
+.seccion-bienvenida {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.seccion-bienvenida p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Tarjetas de servicios */
+.tarjetas-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.tarjeta-servicio {
+    max-width: 300px;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.tarjeta-servicio i {
+    font-size: 2rem;
+    color: #84a98c;
+}
 
 /* Estilos del Footer */
 footer {
