@@ -126,6 +126,38 @@ form button:hover {
     background-color: #52796f;
     transform: translateY(-2px);
 }
+/* Sección bienvenida */
+.seccion-bienvenida {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.seccion-bienvenida p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Tarjetas de servicios */
+.tarjetas-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.tarjeta-servicio {
+    max-width: 300px;
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+.tarjeta-servicio i {
+    font-size: 2rem;
+    color: #84a98c;
+}
 
 /* Estilos del Footer */
 footer {
@@ -171,9 +203,22 @@ footer {
     font-size: 12px;
     transition: color 0.3s ease;
 }
-
 .footer-section ul li a:hover {
     color: #ffffff;
+}
+
+.footer-column ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /* Sección de redes sociales */
@@ -285,3 +330,27 @@ h3.contact-info-title {
     color: #ffffff;
     margin-bottom: 20px;
 }
+
+/* probando estilos institucional.html*/
+.institucional-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.institucional-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.institucional-container h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
