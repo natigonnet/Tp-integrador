@@ -159,6 +159,45 @@ form button:hover {
     color: #84a98c;
 }
 
+/* Estilos Hero Section */
+.hero {
+    background-image: url('./birthday.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Texto blanco para mejor contraste sobre la imagen */
+    text-align: center;
+    position: relative; 
+    padding: 100px 0; /* Ajusta el padding vertical según necesites */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo negro con 50% de opacidad */
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 10; 
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: green
+}
+
+.hero p {
+    color: greenyellow;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
 /* Estilos del Footer */
 footer {
     background-color: #666666; /* Un gris más oscuro */
