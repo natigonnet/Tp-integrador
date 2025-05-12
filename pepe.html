@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - IDW S.A</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3 fixed-top shadow-sm">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <h1 class="mb-5">IDW S.A</h1>
+                </div>
+                <div class="col-md-9">
+                    <nav class="nav justify-content-end">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="institucional.html">Institucional</a>
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero text-center py-5 mt-5">
+            <div class="container">
+                <h2>¡Creamos la fiesta infantil ideal!</h2>
+                <p>En IDW S.A, nos ocupamos de cada detalle para que el cumpleaños de tu hijo sea mágico e inolvidable.</p>
+                <a href="#presupuesto" class="btn btn-primary btn-lg">Solicitar Presupuesto</a>
+            </div>
+        </section>
+
+        <section id="promociones" class="py-5 bg-warning text-dark text-center">
+            <div class="container">
+                <h2 class="mb-4">Promociones Especiales</h2>
+                <p class="lead">¡Aprovechá nuestras ofertas de temporada! Descuentos exclusivos en fiestas temáticas y alquiler de juegos inflables.</p>
+                <p><strong>Promoción del mes:</strong> 20% de descuento en tu primer evento contratando antes del 30.</p>
+            </div>
+        </section>
+
+        <section class="gallery-section py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Galería de Eventos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+                            <img src="img/festivalniñez.jpg" class="img-fluid rounded border border-primary shadow-sm galeria-img w-100" alt="Festival de la niñez 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+                            <img src="img/festivalniñez2.jpg" class="img-fluid rounded border border-primary shadow-sm galeria-img w-100" alt="Festival de la niñez 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="gallery-item">
+                            <img src="img/festivalniñez3.jpg" class="img-fluid rounded border border-primary shadow-sm galeria-img w-100" alt="Festival de la niñez 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>SHOP</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Otros eventos organizados</a></li>
+                        <li><a href="#" class="text-light">Beneficios</a></li>
+                        <li><a href="#" class="text-light">Servicios</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>INFORMACIÓN</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>¡CONTÁCTANOS!</h4>
+                    <p>Estamos aquí para ayudarte a organizar la fiesta de cumpleaños infantil perfecta.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone mr-2"></i> 3447-555-1234</li>
+                        <li><i class="fas fa-envelope mr-2"></i> idwsa@example.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Av. San Martin 123, Colon</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>SÍGUENOS</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon btn btn-outline-light btn-sm rounded-circle mr-2 text-light" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon btn btn-outline-light btn-sm rounded-circle mr-2 text-light" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon btn btn-outline-light btn-sm rounded-circle mr-2 text-light" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon btn btn-outline-light btn-sm rounded-circle text-light" aria-label="Correo electrónico">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-3">
+            <p>&copy; COPYRIGHT © 2025 IDW S.A. TODOS LOS DERECHOS RESERVADOS. POLÍTICAS DE PRIVACIDAD.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5434475551234" class="whatsapp-float" target="_blank" aria-label="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

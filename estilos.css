@@ -222,6 +222,39 @@ form button:hover {
     margin-bottom: 30px;
 }
 
+/* testimonios */
+.card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+/* Promociones */
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .promo-card .btn-whatsapp {
+    margin-top: auto; /* Empuja el botón hacia el final */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado adecuado para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .promo-card .btn-whatsapp:hover {
+    background-color: #128C7E; /* Color de fondo cuando el botón es hover */
+  }
+  
+ 
+  
 
 /* Estilos del Footer */
 footer {
