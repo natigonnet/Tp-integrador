@@ -145,6 +145,10 @@ form button:hover {
     gap: 2rem;
     padding: 2rem;
 }
+.tarjeta-servicio:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
 .tarjeta-servicio {
     max-width: 300px;
     background: #f4f4f4;
