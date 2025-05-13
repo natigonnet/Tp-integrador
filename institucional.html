@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="es" style="scroll-behavior: smooth;">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Institucional - IDW S.A</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institucional - IDW S.A.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 </head>
 <body>
+    <!-- Header -->
     <header class="bg-light py-3">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -21,40 +22,57 @@
                 <div class="col-md-9">
                     <nav class="nav justify-content-end">
                         <a class="nav-link" href="index.html">Inicio</a>
-                        <a class="nav-link" href="institucional.html">Institucional</a>
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" href="institucional.html">Institucional</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="institucional-container">
-        <h2>Quiénes somos</h2>
-        <p>En <strong>IDW S.A</strong> nos dedicamos al alquiler de salones para fiestas infantiles, cumpleaños, eventos familiares y corporativos. Ofrecemos espacios cómodos, seguros y totalmente equipados para que tu evento sea inolvidable.</p>
+    <!-- Contenido Institucional -->
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h2>¿Quiénes somos?</h2>
+            <p class="lead mt-3">
+                En <strong>IDW S.A</strong> nos especializamos en el alquiler de salones para fiestas infantiles, cumpleaños, eventos familiares y corporativos. 
+                Ofrecemos espacios cómodos, seguros y totalmente equipados para que tu evento sea inolvidable.
+            </p>
+        </section>
 
-        <section>
+        <section class="mb-5">
             <h3>Nuestra misión</h3>
-            <p>Brindar un servicio de excelencia en la organización de eventos, adaptándonos a las necesidades de cada cliente con profesionalismo, creatividad y calidez humana.</p>
+            <p>
+                Brindar un servicio de excelencia en la organización de eventos, adaptándonos a las necesidades de cada cliente con profesionalismo, creatividad y calidez humana.
+            </p>
         </section>
 
-        <section>
+        <section class="mb-5">
             <h3>Nuestra visión</h3>
-            <p>Ser líderes en el rubro de salones de fiestas, reconocidos por la calidad de nuestros espacios y la satisfacción de nuestros clientes.</p>
+            <p>
+                Ser líderes en el rubro de salones de fiestas, reconocidos por la calidad de nuestros espacios y la satisfacción de nuestros clientes.
+            </p>
         </section>
 
-        <section>
+        <section class="mb-5">
             <h3>Valores que nos guían</h3>
-            <ul>
-                <li>Compromiso</li>
-                <li>Responsabilidad</li>
-                <li>Innovación</li>
-                <li>Atención personalizada</li>
-                <li>Calidad en el servicio</li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Compromiso</li>
+                <li class="list-group-item">Responsabilidad</li>
+                <li class="list-group-item">Pasión por lo que hacemos</li>
+                <li class="list-group-item">Innovación constante</li>
+                <li class="list-group-item">Empatía con nuestros clientes</li>
             </ul>
         </section>
+
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">Conocé a nuestro equipo</h2>
+            <p class="text-lg mb-4">Nuestro equipo está formado por profesionales comprometidos en brindar el mejor servicio para hacer de tu evento un momento especial.</p>
+            <img src="equipo.jpg" alt="Foto del equipo de trabajo" class="w-full h-auto rounded-lg shadow-md">
+          </section>                   
     </main>
 
+    <!-- Footer -->
     <footer class="bg-secondary py-4">
         <div class="container">
             <div class="row">
@@ -107,5 +125,13 @@
             <p>&copy; COPYRIGHT © 2025 IDW S.A. TODOS LOS DERECHOS RESERVADOS. POLÍTICAS DE PRIVACIDAD.</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/5434475551234" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
