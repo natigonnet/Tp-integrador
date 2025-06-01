@@ -1,10 +1,7 @@
-// admin.js
-
-// Importamos las funciones de salones.js
 import { inicializarSalones, getSalones, addSalon, updateSalon, deleteSalon, getSalonById } from './salones.js';
 
 // Elementos del DOM para la administración
-const tablaSalonesBody = document.getElementById('tabla-salones-body'); // Para la tabla de administración
+const tablaSalonesBody = document.getElementById('tabla-salones-body');
 const formSalon = document.getElementById('form-salon');
 const formSalonTitle = document.getElementById('form-salon-title');
 const btnSubmitSalon = document.getElementById('btn-submit-salon');
