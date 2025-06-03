@@ -2,7 +2,6 @@
 export const LOCAL_STORAGE_KEY = 'idw_salones';
 
 // 2. Función para inicializar los salones en LocalStorage
-// Esta función se ejecutará cuando la página se carga por primera vez
 export function inicializarSalones() {
   const salonesEnLocalStorage = localStorage.getItem(LOCAL_STORAGE_KEY);
   if (!salonesEnLocalStorage) {
@@ -45,7 +44,6 @@ export function inicializarSalones() {
 
 /**
  * Obtiene todos los salones de LocalStorage.
- * @returns {Array} Un array de objetos salón.
  */
 export function getSalones() {
   const salonesJSON = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -54,7 +52,6 @@ export function getSalones() {
 
 /**
  * Guarda un array de salones en LocalStorage.
- * @param {Array} salones - El array de salones a guardar.
  */
 function saveSalones(salones) {
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(salones));
@@ -62,12 +59,10 @@ function saveSalones(salones) {
 
 /**
  * Agrega un nuevo salón a LocalStorage.
- * @param {Object} nuevoSalon - El objeto del nuevo salón.
- * @returns {Object} El salón creado con un ID único.
  */
 export function addSalon(nuevoSalon) {
   const salones = getSalones();
-  const salonConId = { ...nuevoSalon, id: Date.now() }; // Asigna un ID único basado en la marca de tiempo
+  const salonConId = { ...nuevoSalon, id: Date.now() };
   salones.push(salonConId);
   saveSalones(salones);
   console.log('Salón agregado:', salonConId);
@@ -76,8 +71,6 @@ export function addSalon(nuevoSalon) {
 
 /**
  * Actualiza un salón existente en LocalStorage.
- * @param {Object} salonActualizado - El objeto del salón con los datos actualizados. Debe contener el ID.
- * @returns {boolean} True si se actualizó, false si no se encontró el salón.
  */
 export function updateSalon(salonActualizado) {
   let salones = getSalones();
@@ -94,8 +87,6 @@ export function updateSalon(salonActualizado) {
 
 /**
  * Elimina un salón de LocalStorage por su ID.
- * @param {number} idSalon - El ID del salón a eliminar.
- * @returns {boolean} True si se eliminó, false si no se encontró el salón.
  */
 export function deleteSalon(idSalon) {
   let salones = getSalones();
@@ -112,8 +103,6 @@ export function deleteSalon(idSalon) {
 
 /**
  * Obtiene un salón por su ID.
- * @param {number} idSalon - El ID del salón a buscar.
- * @returns {Object|undefined} El objeto salón si se encuentra, de lo contrario undefined.
  */
 export function getSalonById(idSalon) {
   const salones = getSalones();

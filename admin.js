@@ -20,10 +20,10 @@ const disponibleSalon = document.getElementById('disponible-salon');
 // --- Funciones de Renderizado ---
 
 /**
- * Renderiza los salones en la tabla de administración.
+ * Muestra los salones en la tabla de administración.
  */
 function renderizarTablaAdministracion() {
-  tablaSalonesBody.innerHTML = ''; // Limpiar el contenido existente
+  tablaSalonesBody.innerHTML = '';
   const salones = getSalones();
 
   if (salones.length === 0) {
@@ -33,7 +33,7 @@ function renderizarTablaAdministracion() {
 
   salones.forEach(salon => {
     const row = tablaSalonesBody.insertRow();
-    row.dataset.salonId = salon.id; // Guarda el ID en el data-attribute de la fila
+    row.dataset.salonId = salon.id;
 
     row.innerHTML = `
             <td>${salon.id}</td>
@@ -63,8 +63,7 @@ function renderizarTablaAdministracion() {
       const id = parseInt(event.target.dataset.id);
       if (confirm('¿Estás seguro de que quieres eliminar este salón?')) {
         deleteSalon(id);
-        renderizarTablaAdministracion(); // Solo actualizar la tabla de admin
-        // Nota: La página principal (home) deberá recargarse o usar un evento de storage para actualizar
+        renderizarTablaAdministracion();
         alert('Salón eliminado. El cambio se verá reflejado en la página de inicio al recargarla.');
       }
     });
@@ -75,7 +74,6 @@ function renderizarTablaAdministracion() {
 
 /**
  * Carga los datos de un salón en el formulario para edición.
- * @param {number} id - El ID del salón a editar.
  */
 function cargarSalonParaEdicion(id) {
   const salon = getSalonById(id);
@@ -134,7 +132,7 @@ formSalon.addEventListener('submit', (event) => {
   }
 
   limpiarFormulario();
-  renderizarTablaAdministracion(); // Actualizar solo la tabla de admin
+  renderizarTablaAdministracion();
 });
 
 // Manejar el botón de cancelar edición
@@ -143,11 +141,10 @@ btnCancelarEdicion.addEventListener('click', limpiarFormulario);
 
 // --- Inicialización de la página de administración ---
 document.addEventListener('DOMContentLoaded', () => {
-  inicializarSalones(); // Asegurar que LocalStorage esté inicializado
+  inicializarSalones();
   renderizarTablaAdministracion(); // Renderizar la tabla de administración al cargar la página
 });
 
-// Opcional: Escuchar cambios en LocalStorage desde otras pestañas/ventanas (útil para desarrollo)
 window.addEventListener('storage', (event) => {
   if (event.key === 'idw_salones') {
     console.log('Cambio en LocalStorage detectado, actualizando tabla de administración...');

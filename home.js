@@ -1,65 +1,58 @@
 // home.js
 import { inicializarSalones, getSalones } from './salones.js';
 
-const salonesGrid = document.getElementById('salones-grid'); // Para el catálogo público
+const salonesGrid = document.getElementById('salones-grid');
 
 /**
- * Renderiza los salones en el catálogo principal (grilla de tarjetas).
- */
+ * Renderiza los salones en el catálogo principal (grilla de tarjetas).
+ */
 
 function renderizarCatalogoSalones() {
 
-  salonesGrid.innerHTML = ''; // Limpiar el contenido existente
+  salonesGrid.innerHTML = ''; // Limpiar el contenido existente
 
-  const salones = getSalones();
-
-
-  if (salones.length === 0) {
-
-    salonesGrid.innerHTML = '<p class="text-center col-12">No hay salones disponibles en este momento. Vuelve pronto!</p>';
-
-    return;
-
-  }
+  const salones = getSalones();
 
 
-  salones.forEach(salon => {
+  if (salones.length === 0) {
 
-    // mostramos salones disponibles en el catálogo público
+    salonesGrid.innerHTML = '<p class="text-center col-12">No hay salones disponibles en este momento. Vuelve pronto!</p>';
 
-    if (salon.disponible) {
+    return;
 
-      const colDiv = document.createElement('div');
+  }
 
-      colDiv.className = 'col mb-4';
 
-      colDiv.innerHTML = `
+  salones.forEach(salon => {
 
-                <div class="card h-100 shadow-sm">
+    // mostramos salones disponibles en el catálogo público
 
-                    <img src="${salon.imagen}" class="card-img-top" alt="${salon.nombre}">
+    if (salon.disponible) {
 
-                    <div class="card-body text-center">
+      const colDiv = document.createElement('div');
 
-                        <h5 class="card-title">${salon.nombre}</h5>
+      colDiv.className = 'col mb-4';
 
-                        <p class="card-text">Capacidad: ${salon.capacidadNinos} niños / ${salon.capacidadAdultos} adultos</p>
+      colDiv.innerHTML = `
 
-                        <p class="card-text">${salon.descripcion}</p>
+<div class="card h-100 shadow-sm">
 
-                        <a href="#presupuesto" class="btn btn-primary btn-sm mt-2">Solicitar Presupuesto</a>
+<img src="${salon.imagen}" class="card-img-top" alt="${salon.nombre}">
+<div class="card-body text-center">
+<h5 class="card-title">${salon.nombre}</h5>
+<p class="card-text">Capacidad: ${salon.capacidadNinos} niños / ${salon.capacidadAdultos} adultos</p>
+<p class="card-text">${salon.descripcion}</p>
+<a href="#presupuesto" class="btn btn-primary btn-sm mt-2">Solicitar Presupuesto</a>
 
-                    </div>
+</div>
+</div>
+`;
 
-                </div>
+      salonesGrid.appendChild(colDiv);
 
-            `;
+    }
 
-      salonesGrid.appendChild(colDiv);
-
-    }
-
-  });
+  });
 
 }
 
@@ -68,8 +61,7 @@ function renderizarCatalogoSalones() {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  inicializarSalones(); // Aseguramosque LocalStorage esté inicializado
+  inicializarSalones();
 
-  renderizarCatalogoSalones(); // Renderizar el catálogo en la página de inicio
-
+  renderizarCatalogoSalones();
 });
