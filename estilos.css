@@ -450,4 +450,30 @@ h3.contact-info-title {
     margin-bottom: 0.5rem;
 }
 
+/* estilos pagina login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
 
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3b505c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.alert-danger {
+    margin-top: 20px;
+    text-align: center;
+}
